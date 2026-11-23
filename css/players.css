@@ -1,0 +1,116 @@
+/* 상단 페이지 배너 */
+.page-banner {
+  background: linear-gradient(135deg, var(--spurs-navy) 0%, var(--spurs-dark) 100%);
+  color: var(--spurs-white);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.page-banner p {
+  opacity: 0.85;
+  font-size: 1.05rem;
+}
+
+/* 메인 컨테이너 */
+.squad-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 5%;
+}
+
+.position-title {
+  font-size: 1.5rem;
+  color: var(--spurs-navy);
+  border-left: 5px solid var(--spurs-navy);
+  padding-left: 12px;
+  margin: 3rem 0 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* 반응형 카드 그리드 */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* 개별 선수 카드 */
+.player-card {
+  background: var(--spurs-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(19, 34, 87, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.player-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(19, 34, 87, 0.18);
+}
+
+/* 이미지 영역 및 등번호 배지 */
+.player-img-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: var(--spurs-gray);
+  overflow: hidden;
+}
+
+.player-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
+
+.player-card:hover .player-img-box img {
+  transform: scale(1.05);
+}
+
+.back-number {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* 선수 텍스트 정보 */
+.player-info {
+  padding: 1.2rem;
+}
+
+.position-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--spurs-navy);
+  background-color: #e8ecf7;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.player-info h3 {
+  font-size: 1.15rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.nationality {
+  font-size: 0.9rem;
+  color: var(--text-sub);
+}
