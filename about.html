@@ -5,9 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tottenham Hotspur | 공식 소개 페이지</title>
+  <title>팀 소개 | Tottenham Hotspur</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
@@ -15,44 +15,78 @@
     <a href="index.html" class="logo">TOTTENHAM HOTSPUR</a>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">홈</a></li>
+        <li><a href="index.html">홈</a></li>
         <li><a href="players.html">선수 소개</a></li>
-        <li><a href="about.html">팀 소개</a></li>
+        <li><a href="about.html" class="active">팀 소개</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- 메인 히어로 배너 -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="hero-sub">EST. 1882 · NORTH LONDON</span>
-      <h1>TO DARE IS TO DO</h1>
-      <p>용감하게 도전하라. 북런던의 자부심, 토트넘 홋스퍼 FC의 모든 것을 만나보세요.</p>
-      <div class="hero-buttons">
-        <a href="players.html" class="btn btn-primary">선수단 보러가기</a>
-        <a href="about.html" class="btn btn-outline">구단 역사 알아보기</a>
-      </div>
-    </div>
+  <section class="page-banner">
+    <h1>ABOUT THE CLUB</h1>
+    <p>토트넘 홋스퍼의 역사와 홈구장, 그리고 자부심을 소개합니다.</p>
   </section>
 
-  <!-- 핵심 요약 카드 3개 -->
-  <section class="highlights">
-    <div class="highlight-card">
-      <h3>STADIUM</h3>
-      <p class="highlight-num">62,850</p>
-      <p class="highlight-desc">영국 런던 최대 규모의 최첨단 클럽 구장, 토트넘 홋스퍼 스타디움</p>
-    </div>
-    <div class="highlight-card">
-      <h3>HISTORY</h3>
-      <p class="highlight-num">1882년 창단</p>
-      <p class="highlight-desc">140년이 넘는 전통과 잉글랜드 최초 더블(리그+FA컵) 달성의 역사</p>
-    </div>
-    <div class="highlight-card">
-      <h3>THE LILYWHITES</h3>
-      <p class="highlight-num">WHITE & NAVY</p>
-      <p class="highlight-desc">순백의 유니폼과 황금 수탉 엠블럼이 상징하는 공격 축구</p>
-    </div>
-  </section>
+  <main class="about-container">
+    
+    <!-- 구단 개요 2단 레이아웃 -->
+    <section class="club-overview">
+      <div class="overview-text">
+        <h2>북런던의 상징, 스퍼스(Spurs)</h2>
+        <p>
+          1882년 창단된 <strong>토트넘 홋스퍼 FC</strong>는 영국 런던 북부 토트넘을 연고로 하는 잉글랜드 프리미어리그(EPL) 소속 프로 축구 구단입니다.
+        </p>
+        <p>
+          구단의 모토인 <em>"To Dare Is To Do (용감하게 도전하라)"</em> 아래, 화려하고 공격적인 축구를 지향하며 전 세계 수많은 축구 팬들의 사랑을 받고 있습니다.
+        </p>
+        <ul class="club-facts">
+          <li><strong>정식 명칭:</strong> Tottenham Hotspur Football Club</li>
+          <li><strong>창단 연도:</strong> 1882년 9월 5일</li>
+          <li><strong>홈 구장:</strong> 토트넘 홋스퍼 스타디움 (런던)</li>
+          <li><strong>최대 라이벌:</strong> 아스널 FC (북런던 더비)</li>
+        </ul>
+      </div>
+      <div class="overview-img">
+        <img src="images/stadium.jpg" alt="토트넘 홋스퍼 스타디움" onerror="this.src='https://placehold.co/600x400/132257/ffffff?text=TOTTENHAM+HOTSPUR+STADIUM'">
+      </div>
+    </section>
+
+    <!-- 주요 역사 타임라인 -->
+    <section class="history-section">
+      <h2>CLUB HISTORY</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">1882</span>
+          <div class="content">
+            <h3>구단 창단</h3>
+            <p>크리켓 클럽 멤버들이 겨울철 스포츠를 즐기기 위해 '홋스퍼 FC'라는 이름으로 창단.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1901</span>
+          <div class="content">
+            <h3>비리그 구단 최초 FA컵 우승</h3>
+            <p>1888년 풋볼 리그 출범 이후, 1부·2부 리그에 속하지 않은 팀으로 유일하게 FA컵 트로피 획득.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1960-61</span>
+          <div class="content">
+            <h3>20세기 최초 '더블' 달성</h3>
+            <p>빌 니콜슨 감독 지휘 아래 잉글랜드 1부 리그와 FA컵을 동시에 석권하는 대기록 수립.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2019</span>
+          <div class="content">
+            <h3>신축 구장 개장 & 챔피언스리그 결승 진출</h3>
+            <p>62,850석 규모의 토트넘 홋스퍼 스타디움을 개장하고, 구단 역사상 첫 UEFA 챔피언스리그 결승 무대에 진출.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>To Dare Is To Do | Team 11 Project - Tottenham Hotspur Fan Page</p>
