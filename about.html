@@ -1,62 +1,91 @@
 <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css"> 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tottenham Hotspur | 공식 소개 페이지</title>
+  <title>팀 소개 | Tottenham Hotspur FC</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
-
   <header>
-    <a href="index.html" class="logo">TOTTENHAM HOTSPUR</a>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">홈</a></li>
+    <nav class="navbar">
+      <a href="index.html" class="logo">TOTTENHAM HOTSPUR</a>
+      <ul class="nav-links">
+        <li><a href="index.html">홈</a></li>
         <li><a href="players.html">선수 소개</a></li>
-        <li><a href="about.html">팀 소개</a></li>
+        <li><a href="about.html" class="active">팀 소개</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- 메인 히어로 배너 -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="hero-sub">EST. 1882 · NORTH LONDON</span>
-      <h1>TO DARE IS TO DO</h1>
-      <p>용감하게 도전하라. 북런던의 자부심, 토트넘 홋스퍼 FC의 모든 것을 만나보세요.</p>
-      <div class="hero-buttons">
-        <a href="players.html" class="btn btn-primary">선수단 보러가기</a>
-        <a href="about.html" class="btn btn-outline">구단 역사 알아보기</a>
-      </div>
-    </div>
-  </section>
+  <main class="about-container">
+    <section class="club-intro">
+      <h1>구단 소개 & 역사</h1>
+      <p class="subtitle">"To Dare Is To Do" — 1882년부터 이어진 북런던의 자부심</p>
+    </section>
 
-  <!-- 핵심 요약 카드 3개 -->
-  <section class="highlights">
-    <div class="highlight-card">
-      <h3>STADIUM</h3>
-      <p class="highlight-num">62,850</p>
-      <p class="highlight-desc">영국 런던 최대 규모의 최첨단 클럽 구장, 토트넘 홋스퍼 스타디움</p>
-    </div>
-    <div class="highlight-card">
-      <h3>HISTORY</h3>
-      <p class="highlight-num">1882년 창단</p>
-      <p class="highlight-desc">140년이 넘는 전통과 잉글랜드 최초 더블(리그+FA컵) 달성의 역사</p>
-    </div>
-    <div class="highlight-card">
-      <h3>THE LILYWHITES</h3>
-      <p class="highlight-num">WHITE & NAVY</p>
-      <p class="highlight-desc">순백의 유니폼과 황금 수탉 엠블럼이 상징하는 공격 축구</p>
-    </div>
-  </section>
+    <section class="timeline-section">
+      <h2>주요 역사 타임라인</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">1882</span>
+          <div class="content">
+            <h3>구단 창단 (Hotspur FC)</h3>
+            <p>북런던 토트넘 지역의 크리켓 클럽 소년들이 축구팀을 창단하며 역사가 시작되었습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">1960-61</span>
+          <div class="content">
+            <h3>잉글랜드 최초 20세기 더블 달성</h3>
+            <p>빌 니콜슨 감독의 지휘 아래 1부 리그와 FA컵을 동시에 석권하며 전설을 썼습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2019</span>
+          <div class="content">
+            <h3>토트넘 홋스퍼 스타디움 개장 & UCL 준우승</h3>
+            <p>62,850석 규모의 최첨단 홈구장을 개장하고 구단 역사상 첫 UEFA 챔피언스리그 결승에 진출했습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item highlight">
+          <span class="year">2024-25</span>
+          <div class="content">
+            <h3>🏆 UEFA 유로파리그(UEL) 우승</h3>
+            <p>17년 만의 메이저 대회 트로피를 들어 올리며 유럽 대항전 정상에 복귀했습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="year">2026-27</span>
+          <div class="content">
+            <h3>로베르토 데 제르비 감독 체제 출범</h3>
+            <p>새로운 전술과 젊고 역동적인 스쿼드로 프리미어리그와 유럽 무대 정상을 향해 도약하고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stadium-section">
+      <h2>홈구장: 토트넘 홋스퍼 스타디움</h2>
+      <div class="stadium-card">
+        <ul>
+          <li><strong>위치:</strong> 영국 런던 북부 토트넘 (High Road)</li>
+          <li><strong>수용 인원:</strong> 62,850명 (런던 최대 규모의 클럽 전용 축구장)</li>
+          <li><strong>특징:</strong> 세계 최초 개폐식 분할 잔디 시스템, 17,500석 규모의 단일 스탠드 '더 사우스 스탠드' 보유</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>To Dare Is To Do | Team 11 Project - Tottenham Hotspur Fan Page</p>
   </footer>
-
 </body>
 </html>

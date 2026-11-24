@@ -1,107 +1,101 @@
 .about-container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 3rem 5%;
+  padding: 40px 20px;
 }
 
-/* 구단 개요 섹션 */
-.club-overview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  margin-bottom: 5rem;
-}
-
-.overview-text h2 {
-  font-size: 2rem;
-  color: var(--spurs-navy);
-  margin-bottom: 1.2rem;
-}
-
-.overview-text p {
-  margin-bottom: 1rem;
-  color: var(--text-main);
-}
-
-.club-facts {
-  list-style: none;
-  margin-top: 1.5rem;
-  background-color: var(--spurs-gray);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--spurs-navy);
-}
-
-.club-facts li {
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
-}
-
-.club-facts li:last-child {
-  margin-bottom: 0;
-}
-
-.overview-img img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(19, 34, 87, 0.15);
-}
-
-/* 역사 타임라인 */
-.history-section h2 {
-  font-size: 1.8rem;
-  color: var(--spurs-navy);
-  margin-bottom: 2rem;
+.club-intro {
   text-align: center;
-  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.club-intro h1 {
+  font-size: 2.4rem;
+  color: #132257;
+  margin-bottom: 10px;
+}
+
+.club-intro .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.timeline-section h2,
+.stadium-section h2 {
+  font-size: 1.6rem;
+  color: #132257;
+  border-left: 5px solid #132257;
+  padding-left: 12px;
+  margin-bottom: 24px;
 }
 
 .timeline {
-  border-left: 3px solid var(--spurs-navy);
-  padding-left: 2rem;
-  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #e0e4ec;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 12px rgba(19, 34, 87, 0.06);
 }
 
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -2.45rem;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: var(--spurs-navy);
-  border: 3px solid var(--spurs-white);
-  box-shadow: 0 0 0 2px var(--spurs-navy);
+/* 24-25 유로파리그 우승 강조 카드 */
+.timeline-item.highlight {
+  background: linear-gradient(135deg, #132257 0%, #1d3587 100%);
+  color: #ffffff;
+  border: 2px solid #d4af37;
 }
 
 .timeline-item .year {
-  display: inline-block;
+  min-width: 95px;
   font-weight: 800;
-  color: var(--spurs-navy);
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.15rem;
+  color: #132257;
+  margin-right: 20px;
 }
 
-.timeline-item h3 {
+.timeline-item.highlight .year {
+  color: #ffd700;
+}
+
+.timeline-item .content h3 {
   font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 6px;
 }
 
-.timeline-item p {
-  color: var(--text-sub);
+.timeline-item .content p {
   font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
 }
 
-/* 모바일 반응형 */
-@media (max-width: 768px) {
-  .club-overview {
-    grid-template-columns: 1fr;
-  }
+.timeline-item.highlight .content p {
+  color: #eef2ff;
+}
+
+.stadium-card {
+  background: #f4f6fa;
+  border-radius: 12px;
+  padding: 24px 28px;
+  border: 1px solid #dce2ee;
+}
+
+.stadium-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stadium-card li {
+  font-size: 1rem;
+  color: #222;
 }
