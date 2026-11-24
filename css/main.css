@@ -1,0 +1,112 @@
+/* 히어로 섹션 */
+.hero {
+  height: 75vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(11, 20, 55, 0.8), rgba(19, 34, 87, 0.85)),
+              url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--spurs-white);
+  padding: 0 5%;
+}
+
+.hero-sub {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #a3b8ff;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.9rem 2rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: var(--spurs-white);
+  color: var(--spurs-navy);
+}
+
+.btn-primary:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--spurs-white);
+  color: var(--spurs-white);
+}
+
+.btn-outline:hover {
+  background-color: var(--spurs-white);
+  color: var(--spurs-navy);
+  transform: translateY(-2px);
+}
+
+/* 하단 요약 카드 */
+.highlights {
+  max-width: 1100px;
+  margin: -3.5rem auto 0;
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.highlight-card {
+  background: var(--spurs-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(19, 34, 87, 0.12);
+  border-top: 4px solid var(--spurs-navy);
+  text-align: center;
+}
+
+.highlight-card h3 {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: var(--text-sub);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--spurs-navy);
+  margin-bottom: 0.8rem;
+}
+
+.highlight-desc {
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
